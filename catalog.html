@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html" aria-current="page>
+        <a class="navigation-logo" href="index.html">
            <img class="header-logo" scr="img/logo.svg" width="140" height="70" alt="Логотип Седона">
           </a>
       <ul class="site-navigation">
@@ -18,7 +18,7 @@
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html" aria-current="page">Гостиницы</a>
         </li>
       </ul>
       <ul>
@@ -44,7 +44,7 @@
                   </a>
                 </li>
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link">Гостиницы</a>
+                  <a class="breadcrumbs-link" aria-current="location">Гостиницы</a>
                 </li>
               </ol>
            <section class="catalog-filter">
@@ -78,19 +78,19 @@
                 <ul class="filter-housing-list">
                   <li class="filter-item">
                     <label class="filter-housing-hotel">
-                      <input class="hotel-input" type="radio" name="hotel" checked>
+                      <input class="hotel-input" type="radio" name="hotel" value="hotel" checked>
                       Гостиница
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="filter-housing-motel">
-                      <input class="motel-input" type="radio" name="hotel">
+                      <input class="motel-input" type="radio" name="hotel" value="motel">
                       Мотель
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="filter-housing-apart">
-                      <input class="apart-input" type="radio" name="hotel">
+                      <input class="apart-input" type="radio" name="hotel" value="apartment">
                       Апартаменты
                     </label>
                   </li>
@@ -209,7 +209,7 @@
           </ul>
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link" href="#">1</a>
+              <a class="pagination-link" href="#" aria-current="page">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -234,8 +234,9 @@
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="subscribe-email">
-              <input type="email" placeholder="Ваш email" name="subscribe-email" id="subscribe-email">
+            <label class="subscribe-email"> 
+              <span class="subscribe-email">Ваш емейл</span>
+              <input class="subscribe-input" type="email" placeholder="Ваш email" name="subscribe-email" id="subscribe-email">
             </label>
             <button class="button" type="submit">Подписаться</button>
           </form>
