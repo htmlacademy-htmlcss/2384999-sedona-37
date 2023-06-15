@@ -12,3 +12,7 @@
     src:url(../fonts/ptsans-400.woff2) format("woff2");
     font-display: swap;
 }
+body{
+    font-family: "PT Sans", sans-serif;
+
+}
