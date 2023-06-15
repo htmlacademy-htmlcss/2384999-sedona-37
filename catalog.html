@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="main-header">
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html" aria-current="page>
-           <img class="header-logo" scr="img/logo.svg" width="140" height="70" alt="Логотип Седона">
+        <a class="navigation-logo" href="index.html">
+          <img class="header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
           </a>
       <ul class="site-navigation">
         <li class="navigation-item">
@@ -18,7 +19,7 @@
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html" aria-current="page">Гостиницы</a>
         </li>
       </ul>
       <ul>
@@ -44,7 +45,7 @@
                   </a>
                 </li>
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link">Гостиницы</a>
+                  <a class="breadcrumbs-link" aria-current="location">Гостиницы</a>
                 </li>
               </ol>
            <section class="catalog-filter">
@@ -78,19 +79,19 @@
                 <ul class="filter-housing-list">
                   <li class="filter-item">
                     <label class="filter-housing-hotel">
-                      <input class="hotel-input" type="radio" name="hotel" checked>
+                      <input class="hotel-input" type="radio" name="hotel" value="hotel" checked>
                       Гостиница
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="filter-housing-motel">
-                      <input class="motel-input" type="radio" name="hotel">
+                      <input class="motel-input" type="radio" name="hotel" value="motel">
                       Мотель
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="filter-housing-apart">
-                      <input class="apart-input" type="radio" name="hotel">
+                      <input class="apart-input" type="radio" name="hotel" value="apartment">
                       Апартаменты
                     </label>
                   </li>
@@ -144,7 +145,7 @@
           <ul class="hotel-card-list">
             <li class="hotel-card-item">
               <a class="hotel-link" href="#">
-                <img class="hotel-card-image" src="img/placeholder.svg" width="300" height="212" alt="Миниатюра">
+                <img class="hotel-card-image" src="images/hotel-1.jpg" width="300" height="212" alt="Ущелье со звездами">
               </a>
               <a class="hotel-card-link-title" href="#">
                 <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -160,7 +161,7 @@
             </li>
             <li class="hotel-card-item">
               <a class="hotel-link" href="#">
-                <img class="hotel-card-image" src="img/placeholder.svg" width="300" height="212" alt="Миниатюра">
+                <img class="hotel-card-image" src="images/hotel-2.jpg" width="300" height="212" alt="Радужные горы">
               </a>
               <a class="hotel-card-link-title" href="#">
                 <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
@@ -176,7 +177,7 @@
             </li>
             <li class="hotel-card-item">
               <a class="hotel-link" href="#">
-                <img class="hotel-card-image" src="img/placeholder.svg" width="300" height="212" alt="Миниатюра">
+                <img class="hotel-card-image" src="images/hotel-3.jpg" width="300" height="212" alt="Высокие горы">
               </a>
               <a class="hotel-card-link-title" href="#">
                 <h3 class="hotel-card-title">Desert Quail Inn</h3>
@@ -192,7 +193,7 @@
             </li>
             <li class="hotel-card-item">
               <a class="hotel-link" href="#">
-                <img class="hotel-card-image" src="img/placeholder.svg" width="300" height="212" alt="Миниатюра">
+                <img class="hotel-card-image" src="images/hotel-4.jpg" width="300" height="212" alt="Звезды над горой">
               </a>
               <a class="hotel-card-link-title" href="#">
                 <h3 class="hotel-card-title">GreenTree Inn</h3>
@@ -209,7 +210,7 @@
           </ul>
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link" href="#">1</a>
+              <a class="pagination-link" href="#" aria-current="page">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -234,8 +235,9 @@
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="subscribe-email">
-              <input type="email" placeholder="Ваш email" name="subscribe-email" id="subscribe-email">
+            <label class="subscribe-email"> 
+              <span class="visually-hidden">Ваш емейл</span>
+              <input class="subscribe-input" type="email" placeholder="Ваш email" name="subscribe-email" id="subscribe-email">
             </label>
             <button class="button" type="submit">Подписаться</button>
           </form>
@@ -260,7 +262,9 @@
                    </li>
           </ul>
           <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <a class="htmlacademy-link" href="#">.html academy</a>
+          <a class="htmlacademy-link" href="#">
+          <img src="images/htmlacademy.jpg" height="32" width="114" alt="html-academy">
+          </a>
   </footer>
     </body>
     </html>

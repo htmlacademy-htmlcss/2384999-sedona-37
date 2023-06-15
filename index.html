@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="main-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html" aria-current="page"> 
-          <img class="header-logo" scr="img/logo.svg" width="140" height="70" alt="Логотип Седона">
+          <img class="header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
         </a>
       <ul class="site-navigation-list">
         <li class="navigation-item">
@@ -39,7 +40,7 @@
     <main class="main-page">
       <section>
         <h1 class="visually-hidden">Приемущества Седоны</h1>
-        <img src="img/placeholder.svg" width="1200" height="485" alt="Надпись добро пожаловать в Седону">
+        <img src="images/welcome.svg" width="1200" height="485" alt="Надпись добро пожаловать в Седону">
         <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньен!</p>
       </section>
@@ -64,6 +65,7 @@
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="benefits-item">
+            <img src="images/photo-2.jpg" height="385" width="800" alt="Мост дьявола">
             <h3 class="benefits-title">Там есть мост дьявола</h3>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
@@ -101,7 +103,8 @@
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="subscribe-email">
-          <input type="email" placeholder="Ваш email" name="subscribe-email" id="subscribe-email">
+          <span class="visually-hidden">Ваш емейл</span>
+          <input class="subscribe-input" type="email" placeholder="Ваш email" name="subscribe-email" id="subscribe-email">
         </label>
         <button class="button" type="submit">Подписаться</button>
       </form>
@@ -126,7 +129,9 @@
                  </li>
         </ul>
         <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="htmlacademy-link" href="#">.html academy</a>
+        <a class="htmlacademy-link" href="#">
+          <img src="images/htmlacademy.jpg" height="32" width="114" alt="html-academy">
+          </a>
 </footer>
 
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
