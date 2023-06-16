@@ -13,12 +13,26 @@
     font-display: swap;
 }
 body{
+    margin: 0;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 21px;
     background: #F2F2F2;
     color: #333333;
 }
+.navigation{
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #000000;
+}
+.page-container {
+width: 1200px;
+margin: 0 auto;
+background-color: #ffffff;
+box-shadow: 0 0 15px rgb(0, 0, 0, 0.2);
+}
+
 
 
